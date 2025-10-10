@@ -1,0 +1,173 @@
+body {
+    font-family: 'Cantarell', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100%;
+    background-color: #424558;
+}
+
+nav > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; /*por les puce */
+}
+.homebody {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      height: 100vh;
+    }
+    .gauche {
+      flex: 1;
+      background: #1abc9c;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px;
+    }
+    .gauche h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    .gauche p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    .boutonhome {
+      padding: 12px 25px;
+      background: white;
+      color: #1abc9c;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .boutonhome:hover {
+      background: #f0f0f0;
+    }
+    .droite {
+      flex: 1;
+      background: url('https://picsum.photos/800/800?business') no-repeat center/cover;
+    }
+
+
+
+
+
+
+
+
+
+
+
+nav > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav > ul > li {
+    float: left;
+    position: relative;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav > ul > li:hover > a {
+    padding: 15px 30px 20px 30px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);           /*couleur ecriture du haut*/
+    padding: 20px 30px;
+    transition: padding 0.3s ease, background-color 0.15s ease; /* pour une transi moins sec*/
+}
+
+.submenu {
+    display: none;
+}
+
+nav li:hover .submenu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    z-index: 100;
+}
+
+.submenu li {
+    border-bottom: 1px solid #CCC;
+    list-style-type: none; /* enleve les puces */
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #222538;          
+    width: 270px;
+}
+
+.menu-html:hover {                                                        /*debut*/
+    border-top: 5px solid rgb(9, 187, 54);
+    background-color: rgba(220, 220, 220, 0.15);
+}
+
+.menu-economie:hover {
+    border-top: 5px solid rgb(9, 187, 54);
+    background-color: rgba(220, 220, 220, 0.15);
+}
+
+.menu-ecologie:hover {
+    border-top: 5px solid rgb(9, 187, 54);
+    background-color: rgba(220, 220, 220, 0.15);
+}
+
+.menu-contact:hover {
+    border-top: 5px solid rgb(9, 187, 54);
+    background-color: rgba(220, 220, 220, 0.15);
+}                                                                         /*fin barre du dessus*/
+
+.menu-html .submenu {
+    background-color: rgb(9, 187, 54);
+}
+
+.menu-economie .submenu {
+    background-color: rgb(9, 187, 54);
+}
+
+.menu-ecologie .submenu {
+    background-color: rgb(9, 187, 54);
+}
+
+.menu-contact .submenu {
+    background-color: rgb(9, 187, 54);
+}
+
+.submenu li:hover a {
+    color: #000000;                        /*ecriture du bas a verif mais normalement c'est ça*/
+    font-weight: bold;
+}
+
+.menu-html .submenu li:hover {
+    background-color: rgb(100, 250, 137);    /*couleur souris*/
+}
+
+.menu-economie .submenu li:hover {
+    background-color: rgb(100, 250, 137);
+}
+
+.menu-ecologie .submenu li:hover {
+    background-color: rgb(100, 250, 137);
+}
+
+.menu-contact .submenu li:hover {
+    background-color: rgb(100, 250, 137);
+}
