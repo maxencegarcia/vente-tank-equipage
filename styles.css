@@ -1,5 +1,5 @@
 body {
-    font-family: 'Cantarell', sans-serif;
+    font-family: 'source code pro', Calibri, serif;
     margin: 0;
     padding: 0;
 }
@@ -14,55 +14,86 @@ nav > ul {
     padding: 0;
     list-style-type: none; /*por les puce */
 }
+.cartecontact{
+    max-width: 500px;
+    max-height: 500px;
+}
+.tableaucontact{
+    width:40%;
+    border:solid  5px;
+    border-color: rgb(0, 199, 86);
+    border-collapse:collapse;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 200px;
+
+}
+
+.tableaucontact td {
+    border:solid rgb(0, 199, 86) 2px;
+    text-align: left;
+}
+.equipe {
+    text-align: center;
+}
+
+
+
 .homebody {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      height: 100vh;
-    }
-    .gauche {
-      flex: 1;
-      background: #1abc9c;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 60px;
-    }
-    .gauche h1 {
-      font-size: 3em;
-      margin-bottom: 20px;
-    }
-    .gauche p {
-      font-size: 1.2em;
-      margin-bottom: 30px;
-    }
-    .boutonhome {
-      padding: 12px 25px;
-      background: white;
-      color: #1abc9c;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-    .boutonhome:hover {
-      background: #f0f0f0;
-    }
-    .droite {
-      flex: 1;
-      background: url('https://picsum.photos/800/800?business') no-repeat center/cover;
-    }
+  margin: 0;
+  font-family: 'Cantarell', sans-serif;
+  background: #f8f9fc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
+.home-container {
+  flex: 1;
+  display: flex;
+  height: calc(100vh - 70px); 
+}
 
+.home-container .left {
+  flex: 1;
+  background: #001f54;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+}
 
+.home-container .left h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
 
+.home-container .left p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
 
+.home-container .btn {
+  padding: 12px 25px;
+  background: white;
+  color: #001f54;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
 
+}
 
+.home-container .btn:hover {
+  background: #f0f0f0;
+}
 
-
-
+.home-container .right {
+  flex: 1;
+  background: url(batA.png) no-repeat center/cover;
+}
 
 nav > ul::after {
     content: "";
@@ -111,63 +142,116 @@ nav li:hover .submenu {
     display: block;
     padding: 15px 30px;
     font-size: 13px;
-    color: #222538;          
+    color: #f5f5dc;          /*texte menu*/
     width: 270px;
 }
 
 .menu-html:hover {                                                        /*debut*/
-    border-top: 5px solid rgb(9, 187, 54);
+    border-top: 5px solid #001f54;
     background-color: rgba(220, 220, 220, 0.15);
 }
 
 .menu-economie:hover {
-    border-top: 5px solid rgb(9, 187, 54);
+    border-top: 5px solid #001f54;
     background-color: rgba(220, 220, 220, 0.15);
 }
 
-.menu-ecologie:hover {
-    border-top: 5px solid rgb(9, 187, 54);
+.menu-presentation:hover {
+    border-top: 5px solid #001f54;
     background-color: rgba(220, 220, 220, 0.15);
 }
 
 .menu-contact:hover {
-    border-top: 5px solid rgb(9, 187, 54);
+    border-top: 5px solid #001f54;
     background-color: rgba(220, 220, 220, 0.15);
 }                                                                         /*fin barre du dessus*/
 
 .menu-html .submenu {
-    background-color: rgb(9, 187, 54);
+    background-color: #001f54;
 }
 
 .menu-economie .submenu {
-    background-color: rgb(9, 187, 54);
+    background-color: #001f54;
 }
 
-.menu-ecologie .submenu {
-    background-color: rgb(9, 187, 54);
+.menu-presentation .submenu {
+    background-color: #001f54;
 }
 
 .menu-contact .submenu {
-    background-color: rgb(9, 187, 54);
+    background-color: #001f54;
 }
 
 .submenu li:hover a {
-    color: #000000;                        /*ecriture du bas a verif mais normalement c'est ça*/
+    color: #f5f5dc;                        /*ecriture du bas a verif mais normalement c'est ça*/
     font-weight: bold;
 }
 
 .menu-html .submenu li:hover {
-    background-color: rgb(100, 250, 137);    /*couleur souris*/
+    background-color: #d4a017;    /*couleur souris*/
 }
 
 .menu-economie .submenu li:hover {
-    background-color: rgb(100, 250, 137);
+    background-color: #d4a017;
 }
 
-.menu-ecologie .submenu li:hover {
-    background-color: rgb(100, 250, 137);
+.menu-presentation .submenu li:hover {
+    background-color: #d4a017;
 }
 
 .menu-contact .submenu li:hover {
-    background-color: rgb(100, 250, 137);
+    background-color: #d4a017;
 }
+.body_contact {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+}
+
+.contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 15px;
+}
+
+.contact-info h2 {
+      margin: 0;
+      color: #2c3e50;
+}
+
+.contact-info p {
+      margin: 0;
+      color: #555;
+}
+
+.map-container {
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+#map {
+      width: 100%;
+      height: 400px;
+}
+
+
+div {
+    margint: 10px;
+}
+
+
+
+
