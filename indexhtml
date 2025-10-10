@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astek</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="homebody">
+  <nav>
+    <ul>
+      <li class="menu-html"><a href="home.html">
+        <img src="tech.png" width="30" height="30">
+      </a>
+      </li>
+
+      <li class="menu-presentation"><a href="presentation.html">Présentation</a>
+        <ul class="submenu">
+          <li><a href="#">a définir</a></li>
+          <li><a href="#">a définir</a></li>
+          <li><a href="#">a définir</a></li>
+          <li><a href="#">a définir</a></li>
+        </ul>
+      </li>
+
+      <li class="menu-economie"><a href="economie.html">Économie</a>
+        <ul class="submenu">
+          <li><a href="#">a définir</a></li>
+          <li><a href="#">a définir</a></li>
+          <li><a href="#">a définir</a></li>
+          <li><a href="#">a définir</a></li>
+        </ul>
+      </li>
+
+      <li class="menu-contact"><a href="contact.html">Contact</a>
+        <ul class="submenu">
+          <li><a href="#">a définir</a></li>
+          <li><a href="#">a définir</a></li>
+          <li><a href="#">a définir</a></li>
+          <li><a href="#">a définir</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="home-container">
+    <div class="left">
+      <h1>Bienvenue chez Astek</h1>
+      <p>Accélérez votre transformation digitale avec notre expertise.</p>
+      <a href="presentation.html"><button class="btn"> Découvrez nous</button></a>
+    </div>
+    <div class="right"></div>
+  </main>
+
+  <footer>Maxence Garcia</footer>
+</body>
+</html>
