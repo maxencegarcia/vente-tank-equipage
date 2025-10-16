@@ -1,257 +1,218 @@
-body {
-    font-family: 'source code pro', Calibri, serif;
-    margin: 0;
-    padding: 0;
+
+* {
+  font-family: 'Cantarell', sans-serif;
+  box-sizing: border-box;
+  background-color: #001f54;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------------------ menu ------------------------ */
 nav {
-    width: 100%;
-    background-color: #424558;
+  width: 100%;
+  background-color: #001f54;
 }
 
 nav > ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none; /*por les puce */
-}
-.cartecontact{
-    max-width: 500px;
-    max-height: 500px;
-}
-.tableaucontact{
-    width:40%;
-    border:solid  5px;
-    border-color: rgb(0, 199, 86);
-    border-collapse:collapse;
-    text-align:center;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top: 200px;
-
-}
-
-.tableaucontact td {
-    border:solid rgb(0, 199, 86) 2px;
-    text-align: left;
-}
-.equipe {
-    text-align: center;
-}
-
-
-
-.homebody {
   margin: 0;
-  font-family: 'Cantarell', sans-serif;
-  background: #f8f9fc;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.home-container {
-  flex: 1;
-  display: flex;
-  height: calc(100vh - 70px); 
-}
-
-.home-container .left {
-  flex: 1;
-  background: #001f54;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 60px;
-}
-
-.home-container .left h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
-}
-
-.home-container .left p {
-  font-size: 1.2em;
-  margin-bottom: 30px;
-}
-
-.home-container .btn {
-  padding: 12px 25px;
-  background: white;
-  color: #001f54;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-
-}
-
-.home-container .btn:hover {
-  background: #f0f0f0;
-}
-
-.home-container .right {
-  flex: 1;
-  background: url(batA.png) no-repeat center/cover;
+  padding: 0;
+  list-style-type: none;
 }
 
 nav > ul::after {
-    content: "";
-    display: block;
-    clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
 
 nav > ul > li {
-    float: left;
-    position: relative;
-    list-style-type: none;
-    padding: 0;
-}
-
-nav > ul > li:hover > a {
-    padding: 15px 30px 20px 30px;
+  float: left;
+  position: relative;
+  list-style-type: none;
 }
 
 nav a {
-    display: block;
-    text-decoration: none;
-    color: rgb(255, 255, 255);           /*couleur ecriture du haut*/
-    padding: 20px 30px;
-    transition: padding 0.3s ease, background-color 0.15s ease; /* pour une transi moins sec*/
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 20px 30px;
+  transition: padding 0.3s ease, background-color 0.15s ease;
 }
 
-.submenu {
-    display: none;
+nav > ul > li:hover > a {
+  padding: 15px 30px 20px 30px;
 }
 
-nav li:hover .submenu {
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    padding: 0;
-    z-index: 100;
-}
 
-.submenu li {
-    border-bottom: 1px solid #CCC;
-    list-style-type: none; /* enleve les puces */
-}
-
-.submenu li a {
-    display: block;
-    padding: 15px 30px;
-    font-size: 13px;
-    color: #f5f5dc;          /*texte menu*/
-    width: 270px;
-}
-
-.menu-html:hover {                                                        /*debut*/
-    border-top: 5px solid #001f54;
-    background-color: rgba(220, 220, 220, 0.15);
-}
-
-.menu-economie:hover {
-    border-top: 5px solid #001f54;
-    background-color: rgba(220, 220, 220, 0.15);
-}
-
-.menu-presentation:hover {
-    border-top: 5px solid #001f54;
-    background-color: rgba(220, 220, 220, 0.15);
-}
-
+.menu-html:hover,
+.menu-economie:hover,
+.menu-presentation:hover,
 .menu-contact:hover {
-    border-top: 5px solid #001f54;
-    background-color: rgba(220, 220, 220, 0.15);
-}                                                                         /*fin barre du dessus*/
-
-.menu-html .submenu {
-    background-color: #001f54;
+  border-top: 5px solid #d4a017;
+  background-color: rgba(220, 220, 220, 0.15);
 }
 
-.menu-economie .submenu {
-    background-color: #001f54;
-}
-
-.menu-presentation .submenu {
-    background-color: #001f54;
-}
-
+.menu-html .submenu,
+.menu-economie .submenu,
+.menu-presentation .submenu,
 .menu-contact .submenu {
-    background-color: #001f54;
+  background-color: #001f54;
 }
 
 .submenu li:hover a {
-    color: #f5f5dc;                        /*ecriture du bas a verif mais normalement c'est ça*/
-    font-weight: bold;
+  color: #f5f5dc;
+  font-weight: bold;
 }
 
-.menu-html .submenu li:hover {
-    background-color: #d4a017;    /*couleur souris*/
-}
-
-.menu-economie .submenu li:hover {
-    background-color: #d4a017;
-}
-
-.menu-presentation .submenu li:hover {
-    background-color: #d4a017;
-}
-
+.menu-html .submenu li:hover,
+.menu-economie .submenu li:hover,
+.menu-presentation .submenu li:hover,
 .menu-contact .submenu li:hover {
-    background-color: #d4a017;
-}
-.body_contact {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      margin: 0;
-      padding: 20px;
+  background-color: #d4a017;
 }
 
-.contact-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      background: white;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #f5f5dc;
+  background-color: #001f54;
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
+.separator {
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin: 40px auto;
+  width: 100%;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  text-align: center;
+}
+.txte{
+  color: #fff;
 }
 
-.contact-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 15px;
+.Colonel{
+  color: #000;
+  height: auto;
+  width: auto;
 }
 
-.contact-info h2 {
-      margin: 0;
-      color: #2c3e50;
-}
+/*----------------------------------------------------------------------------------------------------------------------*/
 
-.contact-info p {
-      margin: 0;
-      color: #555;
-}
+main {
+    /* le corps de la page prend 90% de la largeur 
+       de la fenêtre pour laisser des marges sur les bords */
+    width: 90%;
+    /* centre le main horizontalement + marge top de 40px + marge bottom de 300px pour le scroll  */
+    margin: 40px auto 300px auto; 
 
-.map-container {
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-}
-
-#map {
-      width: 100%;
-      height: 400px;
-}
-
-
-div {
-    margint: 10px;
+    /* contenu flex, wrap pour aller à la ligne */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 
 
+/*
+ |====================================================================================================================
+ | Tuiles
+ |====================================================================================================================
+*/
 
+.tile a {
+  display: block;        /* pour que le lien prenne la taille exacte de l'image */
+}
+
+.tile a img {
+  display: block;        /* supprime l'espace blanc sous l'image */
+  width: 100%;           /* conserve la largeur de la tuile */
+  height: auto;          /* garde les proportions */
+  border: #001f54 1px solid; /* si tu veux garder la bordure existante */
+}
+
+
+.tile {
+    width: 300px;
+}
+
+.tile>img {
+    border: #001f54 1px solid;
+    width: calc(100% - 2px); /* pour prendre en compte la bordure */;
+}
+
+h2 {
+    font-size: 1em; /* taille de police normale */
+    margin: 0px;
+}
+
+.tile>section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.tile>section>.stats {
+    /* pour aligner les icônes et le texte on utilise un flex */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/*
+ |====================================================================================================================
+ | Version mobile
+ |====================================================================================================================
+*/
+@media (max-width: 600px) {
+
+
+/*
+ |====================================================================================================================
+ | Header
+ |====================================================================================================================
+*/
+
+
+
+/*
+ |====================================================================================================================
+ | contenu de page
+ |====================================================================================================================
+*/
+
+    main {
+        width: 100%;
+        margin: 0;
+
+        gap: 0;
+    }
+
+
+/*
+ |====================================================================================================================
+ | Tuiles
+ |====================================================================================================================
+*/
+
+    .tile {
+        display: flex;
+        width: 50%;
+        position: relative;
+    }
+
+    .tile>img {
+        border: none; /* on enlève la bordure */
+        width: 100%;
+    }
+
+
+}
