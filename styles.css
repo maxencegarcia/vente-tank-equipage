@@ -48,17 +48,17 @@ nav > ul > li:hover > a {
 
 
 .menu-html:hover,
-.menu-economie:hover,
-.menu-presentation:hover,
-.menu-contact:hover {
+.menu-panier:hover,
+.menu-boutique:hover,
+.menu-a_propos:hover {
   border-top: 5px solid #d4a017;
   background-color: rgba(220, 220, 220, 0.15);
 }
 
 .menu-html .submenu,
-.menu-economie .submenu,
-.menu-presentation .submenu,
-.menu-contact .submenu {
+.menu-panier .submenu,
+.menu-boutique .submenu,
+.menu-a_propos .submenu {
   background-color: #001f54;
 }
 
@@ -68,9 +68,9 @@ nav > ul > li:hover > a {
 }
 
 .menu-html .submenu li:hover,
-.menu-economie .submenu li:hover,
-.menu-presentation .submenu li:hover,
-.menu-contact .submenu li:hover {
+.menu-panier .submenu li:hover,
+.menu-boutique .submenu li:hover,
+.menu-a_propos .submenu li:hover {
   background-color: #d4a017;
 }
 
@@ -213,6 +213,7 @@ h2 {
         border: none; /* on enlève la bordure */
         width: 100%;
     }
+
 
 
 }
