@@ -217,3 +217,66 @@ h2 {
 
 
 }
+
+
+
+/*------------page home------------*/
+.titrehome {
+  display: flex;
+  justify-content: center;   
+  align-items: center;      
+  color: #ffffff;
+  height: 650px;
+  font-size: 30px;
+
+  background-image: url("imagehome.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;    
+  background-position: top;  
+
+}
+.titresecondairehome{
+  display: flex;
+  justify-content: center;   
+  align-items: center;      
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.titre3home{
+  display: flex;
+  justify-content: center;   
+  align-items: center;      
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.imgtankhome{
+  height: 250px;
+  width: 500px;
+}
+
+.tankventehome{
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap; 
+}
+.homeboutton{
+  padding: 12px 25px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.bouttonhome{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeboutton:hover{
+  background-color: #ffffff79;
+}
