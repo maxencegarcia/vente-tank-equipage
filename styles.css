@@ -1,16 +1,23 @@
 
 * {
-  font-family: 'Cantarell', sans-serif;
+  font-family: Arial, sans-serif;
   box-sizing: border-box;
-  background-color: #001f54;
+
 }
 
 body {
+  background-color: #001f54; 
   margin: 0;
-  padding: 0;
 }
 
-/* ------------------------ menu ------------------------ */
+
+.boutiqueSection {
+  background-color: #fff;
+  
+}
+
+
+/* ------------------------------------------- menu -------------------------------------------- */
 nav {
   width: 100%;
   background-color: #001f54;
@@ -81,146 +88,21 @@ footer {
   background-color: #001f54;
 }
 /*---------------------------------------------------------------------------------------------------------------------*/
-.separator {
-  height: 10px;
-  background-color: #ffffff;
-  border-radius: 5px;
-  margin: 40px auto;
-  width: 100%;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-  text-align: center;
-}
-.txte{
-  color: #fff;
-}
-
-.Colonel{
-  color: #000;
-  height: auto;
-  width: auto;
-}
-
-/*----------------------------------------------------------------------------------------------------------------------*/
-
-main {
-    /* le corps de la page prend 90% de la largeur 
-       de la fenêtre pour laisser des marges sur les bords */
-    width: 90%;
-    /* centre le main horizontalement + marge top de 40px + marge bottom de 300px pour le scroll  */
-    margin: 40px auto 300px auto; 
-
-    /* contenu flex, wrap pour aller à la ligne */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
 
 
 
-/*
- |====================================================================================================================
- | Tuiles
- |====================================================================================================================
-*/
-
-.tile a {
-  display: block;        /* pour que le lien prenne la taille exacte de l'image */
-}
-
-.tile a img {
-  display: block;        /* supprime l'espace blanc sous l'image */
-  width: 100%;           /* conserve la largeur de la tuile */
-  height: auto;          /* garde les proportions */
-  border: #001f54 1px solid; /* si tu veux garder la bordure existante */
-}
 
 
-.tile {
-    width: 300px;
-}
-
-.tile>img {
-    border: #001f54 1px solid;
-    width: calc(100% - 2px); /* pour prendre en compte la bordure */;
-}
-
-h2 {
-    font-size: 1em; /* taille de police normale */
-    margin: 0px;
-}
-
-.tile>section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-}
-
-.tile>section>.stats {
-    /* pour aligner les icônes et le texte on utilise un flex */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
-}
 
 
-/*
- |====================================================================================================================
- | Version mobile
- |====================================================================================================================
-*/
 @media (max-width: 600px) {
-
-
-/*
- |====================================================================================================================
- | Header
- |====================================================================================================================
-*/
-
-
-
-/*
- |====================================================================================================================
- | contenu de page
- |====================================================================================================================
-*/
-
-    main {
-        width: 100%;
-        margin: 0;
-
-        gap: 0;
-    }
-
-
-/*
- |====================================================================================================================
- | Tuiles
- |====================================================================================================================
-*/
-
-    .tile {
-        display: flex;
-        width: 50%;
-        position: relative;
-    }
-
-    .tile>img {
-        border: none; /* on enlève la bordure */
-        width: 100%;
-    }
-
-
-
 }
 
 
 
-/*------------page home------------*/
+
+
+/*---------------------------------------------------------------------page-home-----------------------------------------------------*/
 .titrehome {
   display: flex;
   justify-content: center;   
@@ -279,4 +161,174 @@ h2 {
 
 .homeboutton:hover{
   background-color: #ffffff79;
+}
+/*---------------------------------------------------------boutique--------------------------------------------------------------*/
+
+
+.boutiqueSection {
+  padding: 30px 20px;
+}
+
+.boutiqueTitreSection {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.boutiqueProduits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.boutiqueProduit {
+  width: 220px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+
+.boutiqueProduit:hover {
+  transform: scale(1.05);
+}
+
+
+.boutiqueImageContainer {
+  position: relative;
+}
+
+.boutiqueImage {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.boutiqueFleche {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.boutiqueFleche:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/**/
+.boutiqueNom {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.boutiquePrix {
+  color: #28a745;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.boutiqueDescription {
+  font-size: 14px;
+  color: #555;
+  margin: 0 10px 10px 10px;
+  height: 40px;
+}
+
+.boutiqueBouton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.boutiqueBouton:hover {
+  background-color: #0056b3;
+}
+
+
+.boutiqueSeparateur {
+  border: none;
+  border-top: 3px solid #007bff;
+  width: 80%;
+  margin: 40px auto;
+}
+
+
+.boutiqueFooter {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+.emoji {
+  width: 15px;
+  height: 10px;
+}
+/*---------------------------------------pub--------------------------------------------------------------------------------------*/
+.pubContainer {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.pubBox {
+  background: #fff;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  animation: pubApparition 0.4s ease;
+}
+
+.pubImage {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.pubButton {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.pubButton:hover {
+  background-color: #0056b3;
+}
+
+@keyframes pubApparition {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+.grasg{
+  font-weight: bold;
 }
