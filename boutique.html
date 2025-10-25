@@ -17,24 +17,23 @@
         </a>
       </li>
 
-      <li class="menu-presentation"><a href="boutique.html">Boutique</a>
+      <li class="menu-boutique"><a href="boutique.html">Boutique</a>
         <ul class="submenu">
         </ul>
       </li>
 
-      <li class="menu-economie"><a href="panier.html">Panier</a>
+      <li class="menu-panier"><a href="panier.html">Panier</a>
         <ul class="submenu">
         </ul>
       </li>
 
-      <li class="menu-contact"><a href="a_propos.html">A propos</a>
+      <li class="menu-a_propos"><a href="a_propos.html">A propos</a>
         <ul class="submenu">
         </ul>
       </li>
     </ul>
   </nav>
-</head>
-<body>
+
 
 
 
@@ -133,6 +132,38 @@
 
   <hr class="boutiqueSeparateur">
 
+  <!--------------------------------------------------pub durex---------------------------------------->
+<div class="bandeau-pub">
+  <div class="bandeau-pub-contenu">
+    <img src="durex.jpg" alt="Pub" class="bandeau-pub-img">
+    <div class="bandeau-pub-texte">
+      <strong>Pub :</strong> Découvrez nos préservatifs ultra-résistants et confortables.  
+      <a href="https://www.durex.fr/products/feeling-extra-preservatifs" target="_blank" class="bandeau-pub-lien">En savoir plus</a>
+    </div>
+    <button class="bandeau-pub-fermer" onclick="this.parentElement.parentElement.remove()">✕</button>
+  </div>
+</div>
+
+
+<div class="pub-laterale pub-gauche">
+  <img src="fchaude.jpg" alt="Pub gauche">
+  <div class="pub-laterale-texte">
+    <p>Rencontre locale ! Giselle est à 2 km...</p>
+    <a href="https://www.monbrouteur.com/sandbox/fake-love" target="_blank">Voir plus</a>
+  </div>
+  <button class="pub-fermer" onclick="this.parentElement.remove()">✕</button>
+</div>
+
+<div class="pub-laterale pub-droite">
+  <img src="medecin2.jpg" alt="Pub droite">
+  <div class="pub-laterale-texte">
+    <p>Le médecin militaire te remet de bonne humeur gratuitement (la première fois) !</p>
+    <a href="https://www.amazon.fr/Vilmorin-4477514-Prairie-Universelle-Vert/dp/B078W6SF9H" target="_blank">Découvrir</a>
+  </div>
+  <button class="pub-fermer" onclick="this.parentElement.remove()">✕</button>
+</div>
+
+
   <h2 class="boutiqueTitreSection">Équipages</h2>
 
 
@@ -142,7 +173,7 @@
         <img src="desmineurs2.jpg" class="boutiqueImage">
         <button class="boutiqueFleche">→</button>
       </div>
-      <div class="boutiqueNom">démineurs</div>
+      <div class="boutiqueNom">Démineurs</div>
       <div class="boutiquePrix">4,99 €/h</div>
       <div class="boutiqueDescription">De vrai bombes mais laissez les grandir sinon c'est illegale aparament.</div>
       <button class="boutiqueBouton">Ajouter au panier</button>
@@ -249,6 +280,29 @@
   </div>
 </section>
 
+<!----------------------------------------Onglet latéral produit--------------------------------------->
+<div class="onglet-lateral">
+  <h3>Produits</h3>
+  <ul>
+    <li>Leclerc</li>
+    <li>begleitpanzer</li>
+    <li>Raketenpanzerwagen</li>
+    <li>t-90m2</li>
+    <li>Renault</li>
+    <li>LOSAT</li>
+    <li>FCM 2c bis</li>
+    <li>TIGER</li>
+    <li>Tirreur</li>
+    <li>Fantassin</li>
+    <li>Colonnel</li>
+    <li>Marechal</li>
+    <li>Loadeur</li>
+    <li>Chasseur Alpin</li>
+    <li>Medecin Militaire</li>
+    <li>Démineurs</li>
+  </ul>
+</div>
+
 <!----------------------------------------------------------------partie a desactiver si problematique pour l'évaluation----------------------------------------------------->>
 <div class="pubContainer" id="pub">
   <div class="pubBox">
@@ -256,6 +310,7 @@
     <img src="R.jfif" alt="Pub" class="pubImage">
     <p>Non evidement personne veux ça alors opter pour durex et venez decouvrir des preservatif fait pour vous</p>
     <a href="https://www.durex.fr/products/feeling-extra-preservatifs" target="_blank" class="pubButton">Voir plus</a>
+    <button class="pub-fermer" onclick="this.parentElement.remove()">✕</button>
   </div>
 </div>
 
@@ -299,9 +354,7 @@ setInterval(afficherPub2, 120000); // pub
 </script>
 
 
-<footer class="boutiqueFooter">
-  © 2025 - The G point | Tous droits réservés
-</footer>
+
 
 <script>
 // fleche
@@ -323,6 +376,13 @@ document.querySelectorAll('.boutiqueFleche').forEach(fleche => {
   });
 });
 </script>
+
+
+<footer class="boutiqueFooter">
+  © 2025 - The G point | Tous droits réservés<br>
+  Modifier le 25/10/2025 par Maxence
+</footer>
+
 
 </body>
 </html>

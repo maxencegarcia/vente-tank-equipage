@@ -21,6 +21,7 @@ body {
 nav {
   width: 100%;
   background-color: #001f54;
+  height: 75px;
 }
 
 nav > ul {
@@ -60,6 +61,8 @@ nav > ul > li:hover > a {
 .menu-a_propos:hover {
   border-top: 5px solid #d4a017;
   background-color: rgba(220, 220, 220, 0.15);
+  max-height: 75px;
+  height: 75px;
 }
 
 .menu-html .submenu,
@@ -272,7 +275,7 @@ footer {
 
 
 .boutiqueFooter {
-  background-color: #222;
+  background-color: #001f54;
   color: #fff;
   text-align: center;
   padding: 10px;
@@ -334,3 +337,170 @@ footer {
 
 }
 
+
+
+
+/*-----------------------------------------------------pub ytb------------------------------------------------------*/
+.bandeau-pub {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.bandeau-pub-contenu {
+  background: #001f54;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.bandeau-pub-img {
+  width: 90px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.bandeau-pub-texte {
+  flex: 1;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.bandeau-pub-lien {
+  color: #ffae00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.bandeau-pub-lien:hover {
+  text-decoration: underline;
+}
+
+.bandeau-pub-fermer {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.bandeau-pub-fermer:hover {
+  transform: scale(1.1);
+}
+.pub-laterale {
+  position: fixed;
+  top: 150px;
+  width: 180px;
+  background: #001f54;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  z-index: 9999;
+}
+
+.pub-laterale img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  object-fit: cover;
+}
+
+.pub-laterale-texte p {
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.pub-laterale a {
+  display: inline-block;
+  color: #ffae00;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.pub-laterale a:hover {
+  text-decoration: underline;
+}
+
+.pub-fermer {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.pub-fermer:hover {
+  transform: scale(1.2);
+}
+
+.pub-gauche { left: 20px; }
+.pub-droite { right: 20px; }
+
+
+@media (max-width: 900px) {
+  .pub-laterale {
+    display: none;
+  }
+}
+@media(max-width: 1235px){
+    .onglet-lateral{
+    display: none;
+  }
+}
+/*-----------------------------------------lateral---------------------------------------------------------------*/
+
+
+.onglet-lateral {
+  position: absolute;        
+  top: 480px;             
+  left: 0;                
+  width: 220px;
+  background-color: #001f54;
+  color: #fff;
+  border-radius: 0 10px 10px 0;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.onglet-lateral h3 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 18px;
+  color: #ffae00;
+  border-bottom: 1px solid #001f54;
+  padding-bottom: 5px;
+}
+
+.onglet-lateral ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+
+.onglet-lateral li {
+  padding: 6px 0;
+  border-bottom: 1px solid #001f54;
+}
+
+.onglet-lateral li:last-child {
+  border-bottom: none;
+}
