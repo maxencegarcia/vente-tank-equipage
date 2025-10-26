@@ -113,7 +113,6 @@ footer {
   color: #ffffff;
   height: 650px;
   font-size: 30px;
-
   background-image: url("imagehome.jpg");
   background-repeat: no-repeat;
   background-size: cover;    
@@ -126,6 +125,13 @@ footer {
   align-items: center;      
   color: #ffffff;
   font-size: 30px;
+  border-top: 5px solid white;
+}
+.vidéohome{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .titre3home{
@@ -135,18 +141,94 @@ footer {
   color: #ffffff;
   font-size: 25px;
 }
+.promotitrehome{
+  display: flex;
+  justify-content: center;   
+  align-items: center;      
+  color: #ff0000;
+  font-size: 40px;
+  height: 0px;
+}
+
+.promohome{
+  color: #ff0000;
+  display: flex;
+  align-items: center;
+  flex-wrap:nowrap; 
+  border: 10px solid #ff0000;
+  background-color: white;
+  font-size: 20px;
+  width: auto 0;
+  height: 210px;
+
+}
+
+.promohome{
+    position: sticky;
+    top : 0px;
+    left: 0;
+    z-index: 1;
+}
+
+.promotxthome1{
+  height: 40px;
+}
+
+.promotankhome{
+  width: 350px;
+  border: 9px solid #ff0000;
+  border-radius: 15%;
+}
 
 .imgtankhome{
   height: 250px;
   width: 500px;
+  border:3px solid white;
+  border-radius: 15%;
+}
+
+.imgequipagehome{
+  height: 250px;
+  width: 485px;
+  border:2px solid white;
+  border-radius: 15%;
+}
+
+.tanktxthome{
+  margin-left: 10px;
 }
 
 .tankventehome{
   color: #ffffff;
   display: flex;
   align-items: center;
-  flex-wrap: nowrap; 
+  flex-wrap:nowrap; 
+  border: 3px solid #ffffff;
 }
+
+.equipageventehome{
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;  
+  
+}
+
+.equipageventehome1{
+   display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;              
+  margin-bottom: 30px;      
+  border: 3px solid #ffffff;
+  border-radius: 15px;
+  box-sizing: border-box;
+  
+}
+
+
 .homeboutton{
   padding: 12px 25px;
   background-color: #ffffff;
@@ -165,6 +247,59 @@ footer {
 .homeboutton:hover{
   background-color: #ffffff79;
 }
+
+.homepromoboutton{
+  padding: 12px 25px;
+  background-color: #ff0000;
+  color: #0047cc ;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.bouttonpromohome{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.homepromoboutton:hover{
+  background-color: #ff0000be;
+  color: white;
+}
+
+.footerhome{
+  background-color: black;
+}
+
+/*----------------------------------------------------------------partie audio home-----------------------------------------------------*/
+
+.tankimghome {
+  position: relative;
+  display: inline-block;
+}
+
+
+.tankimghome .iconsontank {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 34px;
+  height: 34px;
+  opacity: 0;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  transform: translateY(6px);
+}
+
+.tankimghome:hover .iconsontank{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
 /*---------------------------------------------------------boutique--------------------------------------------------------------*/
 
 
@@ -585,3 +720,4 @@ img.suggimage {
   width: 25%;
   height: 15%;
 }
+
