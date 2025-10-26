@@ -106,6 +106,14 @@ footer {
 
 
 /*---------------------------------------------------------------------page-home-----------------------------------------------------*/
+.logohome{
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+  
+}
+
+
 .titrehome {
   display: flex;
   justify-content: center;   
@@ -720,4 +728,5 @@ img.suggimage {
   width: 25%;
   height: 15%;
 }
+
 
