@@ -742,7 +742,7 @@ img.suggimage {
     .aproh1, .aproh2, .aproh6 {
       color: #ffffff;
     }
-    p {
+    .pa {
       line-height: 1.6;
       color: #ffffff;
     }
@@ -774,5 +774,6 @@ img.suggimage {
       background-color: #ffffff;
       opacity: 0.8;
     }
+
 
 
