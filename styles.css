@@ -775,5 +775,29 @@ img.suggimage {
       opacity: 0.8;
     }
 
+    .imagesapropo{
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-wrap:nowrap; 
+}
+    .imageapro{
+  height: 350px;
+  width: 500px;
+  border:3px solid white;
+}
+
+.imageapropo{
+  margin-left: 100px;
+}
+
+.pap{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 
