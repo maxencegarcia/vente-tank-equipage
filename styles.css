@@ -739,7 +739,7 @@ img.suggimage {
       border-radius: 10px;
       text-align: center;
     }
-    h1, h2, h6 {
+    .aproh1, .aproh2, .aproh6 {
       color: #ffffff;
     }
     p {
@@ -774,4 +774,5 @@ img.suggimage {
       background-color: #ffffff;
       opacity: 0.8;
     }
+
 
