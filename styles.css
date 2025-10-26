@@ -729,4 +729,49 @@ img.suggimage {
   height: 15%;
 }
 
+/*-----------------------------------------------------a_propos--------------------------------------------*/
+
+    .contenu-apropos {
+      background-color: #001f54;
+      margin: 50px auto;
+      max-width: 800px;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    h1, h2, h6 {
+      color: #ffffff;
+    }
+    p {
+      line-height: 1.6;
+      color: #ffffff;
+    }
+    .formu {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+    input, textarea {
+      width: 80%;
+      padding: 8px;
+      border: 1px solid #000000;
+      border-radius: 5px;
+    }
+    .btn-lien {
+      display: inline-block;
+      background-color: #fff;
+      color: #001f54;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .btn-lien:hover {
+      background-color: #ffffff;
+      opacity: 0.8;
+    }
 
